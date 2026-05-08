@@ -71,6 +71,15 @@ public class RomanPrinterTest {
         verifyOutput(RomanPrinter.print(500));
     }
 
+    @Test
+    public void testPrintPrimiMilleNumeri() {
+        verifyOutput(RomanPrinter.print(501));
+        verifyOutput(RomanPrinter.print(666));
+        verifyOutput(RomanPrinter.print(900));
+        verifyOutput(RomanPrinter.print(999));
+        verifyOutput(RomanPrinter.print(1000));
+    }
+
     private void verifyOutput(String output) {
         assertNotNull("L'output non deve essere nullo", output);
         assertFalse("L'output non deve essere vuoto", output.isEmpty());
