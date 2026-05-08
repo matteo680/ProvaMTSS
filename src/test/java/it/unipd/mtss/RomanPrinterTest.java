@@ -32,7 +32,7 @@ public class RomanPrinterTest {
         verifyOutput(RomanPrinter.print(9));
         verifyOutput(RomanPrinter.print(10));
     }
-
+    //da qui in poi testiamo casi particolari
     @Test
     public void testPrintPrimiVentiNumeri(){
         verifyOutput(RomanPrinter.print(11));
@@ -40,6 +40,16 @@ public class RomanPrinterTest {
         verifyOutput(RomanPrinter.print(16));
         verifyOutput(RomanPrinter.print(19));
         verifyOutput(RomanPrinter.print(20));
+    }
+
+    @Test
+    public void testPrintPrimiCinquantaNumeri(){
+        verifyOutput(RomanPrinter.print(25));
+        verifyOutput(RomanPrinter.print(31));
+        verifyOutput(RomanPrinter.print(35));
+        verifyOutput(RomanPrinter.print(40));
+        verifyOutput(RomanPrinter.print(49));
+        verifyOutput(RomanPrinter.print(50));
     }
 
     private void verifyOutput(String output) {
