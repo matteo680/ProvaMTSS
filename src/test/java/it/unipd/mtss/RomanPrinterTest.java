@@ -18,6 +18,13 @@ public class RomanPrinterTest {
         verifyOutput(RomanPrinter.print(3));
     }
 
+    @Test
+    public void testPrintPrimiSeiNumeri() {
+        verifyOutput(RomanPrinter.print(4));
+        verifyOutput(RomanPrinter.print(5));
+        verifyOutput(RomanPrinter.print(6));
+    }
+
     private void verifyOutput(String output) {
         assertNotNull("L'output non deve essere nullo", output);
         assertFalse("L'output non deve essere vuoto", output.isEmpty());
