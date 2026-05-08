@@ -13,4 +13,10 @@ public void testPrimiTreNumeri() {
     assertEquals("II", IntegerToRoman.convert(2));
     assertEquals("III", IntegerToRoman.convert(3));
 }
+@Test
+public void testPrimiSeiNumeri(){
+    assertEquals("IV", IntegerToRoman.convert(4));
+    assertEquals("V", IntegerToRoman.convert(5));
+    assertEquals("VI", IntegerToRoman.convert(6));
+}
 }
