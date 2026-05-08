@@ -80,6 +80,22 @@ public class RomanPrinterTest {
         verifyOutput(RomanPrinter.print(1000));
     }
 
+    //testiamo i casi limite 
+    @Test(expected = IllegalArgumentException.class)
+    public void testPrintSottoLimite() {
+        RomanPrinter.print(0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testLimiteInferioreNegativo() {
+        RomanPrinter.print(-1);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testPrintSopraLimite() {
+        RomanPrinter.print(1001);
+    }
+
     private void verifyOutput(String output) {
         assertNotNull("L'output non deve essere nullo", output);
         assertFalse("L'output non deve essere vuoto", output.isEmpty());
