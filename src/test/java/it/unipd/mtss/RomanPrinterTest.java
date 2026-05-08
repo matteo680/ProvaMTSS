@@ -25,6 +25,14 @@ public class RomanPrinterTest {
         verifyOutput(RomanPrinter.print(6));
     }
 
+    @Test
+    public void testPrintPrimiDieciNumeri(){
+        verifyOutput(RomanPrinter.print(7));
+        verifyOutput(RomanPrinter.print(8));
+        verifyOutput(RomanPrinter.print(9));
+        verifyOutput(RomanPrinter.print(10));
+    }
+
     private void verifyOutput(String output) {
         assertNotNull("L'output non deve essere nullo", output);
         assertFalse("L'output non deve essere vuoto", output.isEmpty());
