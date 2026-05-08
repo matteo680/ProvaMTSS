@@ -33,6 +33,15 @@ public class RomanPrinterTest {
         verifyOutput(RomanPrinter.print(10));
     }
 
+    @Test
+    public void testPrintPrimiVentiNumeri(){
+        verifyOutput(RomanPrinter.print(11));
+        verifyOutput(RomanPrinter.print(15));
+        verifyOutput(RomanPrinter.print(16));
+        verifyOutput(RomanPrinter.print(19));
+        verifyOutput(RomanPrinter.print(20));
+    }
+
     private void verifyOutput(String output) {
         assertNotNull("L'output non deve essere nullo", output);
         assertFalse("L'output non deve essere vuoto", output.isEmpty());

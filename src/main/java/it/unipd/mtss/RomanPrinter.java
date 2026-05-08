@@ -7,8 +7,8 @@ package it.unipd.mtss;
 public class RomanPrinter {
 
     public static String print(int num) {
-        if (num < 1 || num > 10) {
-            throw new IllegalArgumentException("Al momento supportiamo solo i numeri 1-10");
+        if (num < 1 || num > 20) {
+            throw new IllegalArgumentException("Al momento supportiamo solo i numeri 1-20");
         }
         return printAsciiArt(IntegerToRoman.convert(num));
     }

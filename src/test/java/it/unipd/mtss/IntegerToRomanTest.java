@@ -26,4 +26,12 @@ public void testPrimiDieciNumeri(){
     assertEquals("IX", IntegerToRoman.convert(9));
     assertEquals("X", IntegerToRoman.convert(10));
 }
+@Test
+public void testPrimiVentiNumeri(){
+    assertEquals("XI", IntegerToRoman.convert(11));
+    assertEquals("XV", IntegerToRoman.convert(15));
+    assertEquals("XVI", IntegerToRoman.convert(16));
+    assertEquals("XIX", IntegerToRoman.convert(19));
+    assertEquals("XX", IntegerToRoman.convert(20));
+}
 }
