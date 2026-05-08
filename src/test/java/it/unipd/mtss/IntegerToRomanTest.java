@@ -44,4 +44,13 @@ public void testPrimiCinquantaNumeri(){
     assertEquals("XLIX", IntegerToRoman.convert(49));
     assertEquals("L", IntegerToRoman.convert(50));
 }
+@Test
+public void testPrimiCentoNumeri(){
+    assertEquals("LI", IntegerToRoman.convert(51));
+    assertEquals("LXVI", IntegerToRoman.convert(66));
+    assertEquals("LXXIX", IntegerToRoman.convert(79));
+    assertEquals("LXXXV", IntegerToRoman.convert(85));
+    assertEquals("XCIX", IntegerToRoman.convert(99));
+    assertEquals("C", IntegerToRoman.convert(100));
+}
 }

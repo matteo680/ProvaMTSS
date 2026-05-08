@@ -52,6 +52,16 @@ public class RomanPrinterTest {
         verifyOutput(RomanPrinter.print(50));
     }
 
+    @Test
+    public void testPrintPrimiCentoNumeri(){
+        verifyOutput(RomanPrinter.print(51));
+        verifyOutput(RomanPrinter.print(66));
+        verifyOutput(RomanPrinter.print(79));
+        verifyOutput(RomanPrinter.print(85));
+        verifyOutput(RomanPrinter.print(99));
+        verifyOutput(RomanPrinter.print(100));
+    }
+
     private void verifyOutput(String output) {
         assertNotNull("L'output non deve essere nullo", output);
         assertFalse("L'output non deve essere vuoto", output.isEmpty());
