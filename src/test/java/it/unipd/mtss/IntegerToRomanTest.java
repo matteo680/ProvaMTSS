@@ -61,4 +61,15 @@ public void testPrimiCinquecentoNumeri(){
     assertEquals("CDXCIX", IntegerToRoman.convert(499));
     assertEquals("D", IntegerToRoman.convert(500));
 }
+@Test
+public void testPrimiMilleNumeri() {
+    assertEquals("DXL", IntegerToRoman.convert(540));
+    assertEquals("DCLXVI", IntegerToRoman.convert(666));
+    assertEquals("DCXCIX", IntegerToRoman.convert(699));
+    assertEquals("DCCVII", IntegerToRoman.convert(707));
+    assertEquals("DCCCXC", IntegerToRoman.convert(890));
+    assertEquals("CM", IntegerToRoman.convert(900));
+    assertEquals("CMXCIX", IntegerToRoman.convert(999));
+    assertEquals("M", IntegerToRoman.convert(1000));
+}
 }
