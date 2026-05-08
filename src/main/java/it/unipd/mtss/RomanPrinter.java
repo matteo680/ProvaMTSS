@@ -46,6 +46,16 @@ public class RomanPrinter {
                 "    \\/    "
             };
         }
+        else if (c == 'X') {
+            return new String[]{
+                "__    __  ", 
+                "\\ \\  / /  ", 
+                " \\ \\/ /   ", 
+                "  >  <    ", 
+                " / /\\ \\   ", 
+                "/_/  \\_\\  " 
+            };
+        }
         throw new IllegalArgumentException("Carattere non supportato: " + c);
     }
 }
