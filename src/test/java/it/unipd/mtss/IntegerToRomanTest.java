@@ -72,4 +72,16 @@ public void testPrimiMilleNumeri() {
     assertEquals("CMXCIX", IntegerToRoman.convert(999));
     assertEquals("M", IntegerToRoman.convert(1000));
 }
+@Test(expected = IllegalArgumentException.class)
+public void testConvert_SottoLimite_ShouldThrowException() {
+    IntegerToRoman.convert(0);
+}
+@Test(expected = IllegalArgumentException.class)
+public void testConvert_Negativo_ShouldThrowException() {
+    IntegerToRoman.convert(-5);
+}
+@Test(expected = IllegalArgumentException.class)
+public void testConvert_SopraMille_ShouldThrowException() {
+    IntegerToRoman.convert(1001);
+}
 }
