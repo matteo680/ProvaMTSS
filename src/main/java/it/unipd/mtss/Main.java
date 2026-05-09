@@ -12,7 +12,9 @@ public class Main
         Scanner scanner = new Scanner(System.in);
         System.out.print("Inserisci un numero intero da convertire: ");
         int numero = scanner.nextInt();
+        System.out.print("Il tuo numero convertito è:\n");
         System.out.println(IntegerToRoman.convert(numero));
+        System.out.print("Il tuo numero stampato in asciart è:\n");
         System.out.println(RomanPrinter.print(numero));
         scanner.close();
     }
