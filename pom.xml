@@ -77,6 +77,10 @@
         <jacocoReports>
             <jacocoReport>target/site/jacoco/jacoco.xml</jacocoReport>
         </jacocoReports>
+        <scanForSources>true</scanForSources>
+        <sourceDirectories>
+            <sourceDirectory>src/main/java</sourceDirectory>
+        </sourceDirectories>
     </configuration>
      </plugin>
     </plugins>
