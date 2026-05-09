@@ -10,4 +10,4 @@ Link repo con dimenticanze: https://github.com/Andrea-project/Prova-pratica
 
 Per quanto può riguardare coveralls, abbiamo tentato in vari modi, tra cui l'aggiunta di relativi comandi nel pom, di allineare l'effetiva copertura del codice con quanto riportato dal sito.
 In seguito lasciamo l'effettiva copertura del codice che risulta da jacoco:
-<img width="1461" height="245" alt="image" src="https://github.com/user-attachments/assets/9874245a-5882-4ccd-912b-0376f2ca660f" />
+<img width="1232" height="165" alt="image" src="https://github.com/user-attachments/assets/30715f90-2770-41a7-86bf-80dd2cd650ed" />
